@@ -1,8 +1,8 @@
-DATA SOURCE:
+DATA SOURCES:
 Deutscher Wetterdienst (German Weather Service), Climate Data Center (CDC)
+Institut Wohnen und Umwelt: Loga et al. 2015 - Deutsche Wohngebäudetypologie Beispielhafte Maßnahmen zur Verbesserung der Energieeffizienz von typischen Wohngebäuden
 
-CITE WITH:
-Daten extrahiert vom DWD Climate Data Center (CDC): Title, version, date.
+Daten extrahiert vom DWD Climate Data Center (CDC): Berlin Brandenburg (427), v21.3, 2018.
 Please note the terms of use as explained at https://opendata.dwd.de/climate_environment/CDC/Nutzungsbedingungen_German.pdf
 and for convenience: https://opendata.dwd.de/climate_environment/CDC/Terms_of_use.pdf.
 The copyright and rules on citations are explained at the websites of the German Weather Service (Deutscher Wetterdienst).
