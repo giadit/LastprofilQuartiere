@@ -8,7 +8,8 @@ def plotload(lastprofil):
     plt.xlabel('Hour')
     plt.ylabel('Thermal Energy Load')
     plt.title('Load Profile')
-
+    
+    np.savetxt('loadprofile.csv', lastprofil, fmt='%1.3f', delimiter=',')
 
     plt.grid(True)
     plt.tight_layout()
