@@ -3,7 +3,7 @@ import numpy as np
 
 
 def quartier_setup_k():
-    data_k = pd.read_csv('DatenIWU2015.csv', sep=';', engine='python', index_col=False, skipfooter = 10, encoding='latin-1' )
+    data_k = pd.read_csv('data/DatenIWU2015.csv', sep=';', engine='python', index_col=False, skipfooter = 10, encoding='latin-1' )
     m2_k = data_k['beheizte Wohnfläche [m2]'].to_numpy()
     kW_k = data_k['Wärmeverbrauch Heizung [kWh/m2a]'].to_numpy()
     
@@ -29,7 +29,7 @@ def quartier_setup_k():
     return Qa
 
 def quartier_setup_z():
-    data_z = pd.read_csv('DatenIWU2015.csv', sep=';', engine='python', index_col=False, names=['Gebäudetyp',
+    data_z = pd.read_csv('data/DatenIWU2015.csv', sep=';', engine='python', index_col=False, names=['Gebäudetyp',
                                                                               'beheizte Wohnfläche [m2]',
                                                                               'Wärmeverbrauch Heizung [kWh/m2a]'] 
                          , skiprows = 10, encoding='latin-1' )
