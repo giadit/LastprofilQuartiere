@@ -20,11 +20,12 @@ Tmhp=data.mean(numeric_only=True).iloc[0]
 'Auslegungstemperatur'
 Tmin=data.min(numeric_only=True).iloc[0]
 
-n = float(input('Geben sie einen Anfangswert für n (<1.9) ein: '))
+#n = float(input('Geben sie einen Anfangswert für n (<1.9) ein: '))
 last_k = lastprofil_calc(1.5, Qa_k, 15, Tmin, Tmhp, Tu)
-last_z = lastprofil_calc(n, Qa_z, 12, Tmin, Tmhp, Tu)
+last_z = lastprofil_calc(3.55, Qa_z, 12, Tmin, Tmhp, Tu)
 
 lastprofil = last_k + last_z
+lastprofil = np.nan_to_num(lastprofil)
 
 np.savetxt('results/loadprofile.csv', lastprofil, fmt='%1.3f', delimiter=',')
 plotload(lastprofil)  
